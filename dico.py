@@ -1,1 +1,1 @@
-dico = {'cleanchat':'Ce bot sert à supprimer des messages dans un salon choisis.'}
+dico = {'cleanchat':'```Ce bot sert à supprimer des messages dans un salon choisi.```'}
