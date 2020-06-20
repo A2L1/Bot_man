@@ -1,1 +1,2 @@
-dico = {'cleanchat':'```Ce bot sert à supprimer des messages dans un salon choisi.```'}
+dico = {'cleanchat':'```Ce bot sert à supprimer des messages dans un salon choisi.```',
+'man':"```Ce bot vous servira à obtenir toutes les commandes concernant un bot. Pour obtenir la liste de ses commandes écrivez $man [Nom du bot voulu]```"}

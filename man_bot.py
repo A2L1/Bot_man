@@ -18,7 +18,7 @@ async def on_ready():
 #créer la commande $man
 @bot.command()
 async def Man_py(ctx):
-    await ctx.send("Comment puis-je vous aidez")
+    await ctx.send(dico['man'])
 
 @bot.command()
 async def man(ctx, arg):
