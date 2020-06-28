@@ -1,0 +1,1 @@
+```Ce bot sert à supprimer des messages dans un salon choisi.```
