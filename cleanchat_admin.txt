@@ -1,4 +1,259 @@
 ```
-test
+Ce bot sert à supprimer des messages dans un salon choisi.
 
-Ce bot sert à supprimer des messages dans un salon choisi.```
+- banword -
+Permet de bannir une liste de mot.
+
+@CleanChat banword <mot>
+
+
+- unbanword -
+Permet de débannir un mot de la liste.
+
+@CleanChat unbanword/ubw <word>
+
+
+- bannedwords -
+Montre la liste des mots bannis.
+
+@CleanChat bannedwords/blist/bwl
+
+
+- clearbannedwords -
+Vidé la liste de mots bannis.
+
+@CleanChat clearbannedwords
+
+
+- addbot -
+Cette commande sert à enregistré un bot auprès de Cleanchat qui supprimera
+toutes les commandes écrites pour intéragir ce dernier.
+
+@CleanChat addbot/register/add <@Bot> <prefix> [prefix2 prefix3 ...]
+
+
+- limits -
+Affiche les limites pour votre serveur, et comment augmenter les limites.
+
+@CleanChat limits/limites
+
+
+- increaselimits -
+*Commandes disponibles uniquement pour les contributeur Paypal ou Patreon*
+
+@CleanChat increaselimits
+
+
+- botlist -
+Affiche toutes les informations sur le bot et les paramètres sur le serveur.
+
+@CleanChat botlist/list/bl
+
+
+- cleanbots -
+En utilisant cette commande CleanChat supprime le bot enregistré s'il n'est
+plus sur le serveur.
+
+@CleanChat cleanbots
+
+
+- removebot -
+Si un bot à été enregistré avec 'addbot' vous pouvez utilisé cette commande
+pour le désenregistré.
+
+@CleanChat removebot/unregister/delete <@Bot>
+
+
+- changebotprefix -
+Si vous avez enregistré un bot vous pouvez changez le préfix des commandes
+ce bot.
+*Le préfix de CleanChat ne peut pas être changé*
+
+@CleanChat changebotprefix/cbp <@Bot> <prefix> [prefix2 prefix3 ...]
+
+
+- ignorerole -
+Cette commande permet de demandé à CleanChat d'ignorer un rôle.
+
+Exemple: Si vous avez un channel "commandes" et vous voulez écrire des messages
+que vous ne voulez pas voir être supprimé. Tout les messages écris par un
+membre possédant ce rôle seront ignorés.
+*Il n'est possible d'ignorer un seul rôle*
+
+@CleanChat ignorerole/adminrole <@Role>
+
+
+- usewhitelist -
+Si activé CleanChat répondra sur un channel autorisé si il est whitelisté
+
+@CleanChat usewhitelist <true | false>
+
+
+- commandchannel -
+Si vous avez un chat-commandes et qu'il est enregistré CleanChat va 
+automatiquement supprimé tout les messages excepté les commandes dans le
+chat.
+*
+
+@CleanChat commandechannel/cc <#channel> <true | false>
+
+- noncommandchannel -
+C'est l'inverse de 'commandchannel'.
+Si vous enregistré un NONchat-commande CleanChat va supprimé toutes les
+commandes et les messages de bot.
+*CleanChat reconnais uniquement les bots enregistrés*
+
+@CleanChat noncommandchannel/ncc <#channel> <true | false>
+
+
+- autoclearchannel -
+Voir documantation: https://www.alexandernorup.com/CleanChat
+
+
+- blacklistchannel -
+Quand un chat est blacklisté CleanChat va ignorer tout les bots dans ce chat
+et continue à écouter les commandes.
+
+@CleanChat blacklistchannel/blacklist <#channel> <true | false>
+
+
+- whitelistchannel -
+Whitelist un chat.
+
+@CleanChat whitelistchannel/whitelist <#channel> <true | false>
+
+
+- clearexcludes -
+Effacera toutes les commandes exclues, incluant pratiquement toutes les
+commandes à nouveau.
+
+@CleanChat clearexcludes
+
+
+- excludecommand -
+Si vous voulez que Cleanchat fonctionne sur chaque commande d’un bot,
+sauf quelques unes, c’est possible.
+Si vous spécifiez une commande comme "$play", chaque message qui
+commence par "$play" sera complètement ignoré par Cleanchat, même
+si elle peut être configurée pour supprimer tous les messages qui
+commencent par "$".
+Si la commandes est en conflit avec un 'bannedword', le 'bannedword' aura
+toujours la priorité.
+
+@CleanChat excludecommand/e/exclude <command>
+
+
+- includecommand -
+Si vous avez exclu une commande with 'excludecommand' vous pouvez réinclure
+une commande avec cette commande.
+Vous ne pouvez réinclure seulement les commandes exclues.
+
+@CleanChat includecommand/unexcludecommand/unexclude/includ/i <command>
+
+
+- excludecommands -
+Montre la liste de toutes les commandes exclues.
+
+@CleanChat excludedcommands
+
+
+- do -
+*Commandes réservées au contributeurs Patreon*
+Cette commande est juste du fun pour plus d'info lire la documentation:
+https://www.alexandernorup.com/CleanChat
+
+@CleanChat do <text>
+
+
+- help -
+Permet de vous donner plus d'information sur une commande.
+
+@CleanChat help [commande]
+
+
+- reset -
+CleanChat oublie tout se qui a été paramétré sur ce bot à propos de ce serveur
+
+@CleanChat reset
+
+
+- support -
+Envoie un lien vers le serveur support
+
+@CleanChat support
+
+
+- webhooks -
+Cette commande va listé tout les webhooks enregistré sur ce serveur et leur ID.
+*CleanChat a besoin des permissions 'Manage Webhooks'.*
+
+@CleanChat webhooks/webhooks
+
+
+- forcepublireply - 
+Si c'est avtivé CleanChat répondra dans le chat plutôt que dans les messages
+privés. Cette fonctionnalité est utile si vous ne voulez pas que les personnes
+sur votre serveur puissent vous DM, mais vous voulez toujours utiliser
+Cleanchat.
+
+@CleanChat forcepublicreply/fpr <true | false>
+
+
+- deletebotmsg -
+Si ce paramètre est activé, Cleanchat supprimera le message du bot ainsi
+que le message initial de l’utilisateur.
+Cela fonctionne en parallèle avec le paramètre  'deletemsgdelay '.
+
+@CleanChat deletebotmsg/deletebotmessage/dbm <@Bot> <true | false>
+
+
+- autodeletebot -
+Certains bots ont une fonction de chat automatique intégrée, où le bot va
+écrire quelque chose dans le chat même si elle n’a pas été commandée par
+un utilisateur. Par défaut, Cleanchat ne supprime pas les messages bot qui
+n’ont pas été initiés par un utilisateur.
+En activant ce paramètre, Cleanchat supprimera automatiquement tous les
+messages envoyés par le bot, même si un utilisateur a d’abord utilisé une
+commande.
+
+@CleanChat autodeletebot/adb <@Bot> <true | false>
+
+
+-deletemsgdelay
+Ce paramètre vous permet de définir un délai de suppression. Vous pouvez
+définir un délai individuel pour les bots et les utilisateurs si vous le
+souhaitez. Le délai est défini en millisecondes ou une "chaîne de temps
+formatée".
+Utilisé la commande 'help' pour plus d'aide.
+
+@CleanChat deletemsgdelay/delay/msg <@Bot> <temps en ms>
+
+
+- deleteinitialmsg -
+Par défault, CleanChat supprime le message initial de toutes les requêtes
+initiales. Cette option désactive ça.
+
+@CleanChat deleteinitialmsg/dim <@Bot> <true | false>
+
+
+- disablemessagetimeout -
+Par défault CleanChat supprime la commande après 400ms. Cette commande
+désactive cette fonctionnalité.
+
+@CleanChat disablemessagetimeout/dmt <@Bot> <true | false>
+
+
+- purge -
+Supprime un nombre donné de message dans un chat (maximum 100)
+*Supprime les messages datant d'il y a moins de 14 jours*
+
+@CleanChat purge <number>
+
+
+- purgechat -
+Clone le chat et supprime l'ancien et donne l'impression d'avoir nettoyé le
+chat.
+
+@CleanChat purgechat
+
+```

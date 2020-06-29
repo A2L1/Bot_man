@@ -1,1 +1,5 @@
-```Tout le monde ```
+```
+Ce bot sert à supprimer des messages dans un salon choisi.
+
+Tu n'as pas besoin d'utilisé ce bot.
+```
